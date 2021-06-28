@@ -5,6 +5,9 @@ const express = require('express');
 // making express app
 const app = express();
 
+// db connection
+require('./models/db');
+
 
 const PORT = 8001;
 
