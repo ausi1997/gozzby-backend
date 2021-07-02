@@ -2,11 +2,17 @@
 // importing the modules
 const express = require('express');
 
+const ProductData = require('./controllers/product');
+
 // making express app
 const app = express();
 
 // db connection
 require('./models/db');
+
+// inserting the product data
+
+ProductData.ProductData();
 
 
 const PORT = 8001;
